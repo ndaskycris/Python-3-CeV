@@ -1,0 +1,11 @@
+tupla = ('Livro', 20.70,
+         'Lápis', 1,
+         'Caderno', 15.99,
+         'Borracha', 0.50,
+         'Caneta', 1.15,
+         'Estojo', 14.99)
+print('-' * 40)
+print(f'{"LISTAGEM DE PREÇOS":^40}')
+print('-' * 40)
+for item in range(0, len(tupla), 2):
+    print(f'{tupla[item]:.<30} R${tupla[item+1]:>6.2f}')
